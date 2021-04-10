@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Minamahmood/Team-Profile-Generator/issues"
   },
-  "homepage": "https://github.com/Minamahmood/Team-Profile-Generator#readme"
+  "homepage": "https://github.com/Minamahmood/Team-Profile-Generator#readme",
+  "dependencies": {
+    "inquirer": "^8.0.0"
+  }
 }

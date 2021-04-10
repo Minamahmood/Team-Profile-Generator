@@ -7,10 +7,10 @@ const fs = require("fs");
 
 const OUTPUT_DIR = path.resolve(__dirname, "output");
 const outputpath = path.join(OUTPUT_DIR, "team.html");
-const render = require("./lib/htmlRenderer");
-const Choice = require("inquirer/lib/objects/choice");
-const Choices = require("inquirer/lib/objects/choices");
-const { ENGINE_METHOD_CIPHERS } = require("node:constants");
+// const render = require("./lib/htmlRenderer");
+// const Choice = require("inquirer/lib/objects/choice");
+// const Choices = require("inquirer/lib/objects/choices");
+// const { ENGINE_METHOD_CIPHERS } = require("node:constants");
 
 const team = [];
 addToTeam();
@@ -21,7 +21,7 @@ function addToTeam() {
             type: "list",
             name: "addEmployee",
             message: "Add an employee, or select  'finish'.",
-            Choices: ["Manager", "Engineer", "Intern", "Finish"],
+            choices: ["Manager", "Engineer", "Intern", "Finish"],
         }, ])
         .then((data) => {
             switch (data.addEmployee) {
