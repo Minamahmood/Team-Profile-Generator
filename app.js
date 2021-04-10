@@ -1,4 +1,4 @@
-const Manager = require("./lib/manajer");
+const Manager = require("./lib/manager");
 const Engineer = require("./lib/engineer");
 const Intern = require("./lib/intern");
 const inquirer = require("inquirer");
@@ -7,7 +7,7 @@ const fs = require("fs");
 
 const OUTPUT_DIR = path.resolve(__dirname, "output");
 const outputpath = path.join(OUTPUT_DIR, "team.html");
-const render = require("");
+const render = require("./lib/htmlRenderer");
 const Choice = require("inquirer/lib/objects/choice");
 const Choices = require("inquirer/lib/objects/choices");
 const { ENGINE_METHOD_CIPHERS } = require("node:constants");
