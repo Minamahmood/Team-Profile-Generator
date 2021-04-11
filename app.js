@@ -25,10 +25,10 @@ function addToTeam() {
                 case "ENGENEER":
                     engineerInfo();
                     break;
-                case "intern":
+                case "Intern":
                     internInfo();
                     break;
-                case "manager":
+                case "Manager":
                     managerInfo();
                     break;
                 default:
