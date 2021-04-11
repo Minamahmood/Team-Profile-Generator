@@ -3,18 +3,11 @@ body {
     background-size: cover;
 }
 
-.container {
-    display: flex;
-}
-
-.card {
-    width: 400px;
-    height: 400px;
-}
-
 h3 {
     color: white;
-    margin-left: 50%;
+    margin-left: 40%;
+    font-size: 40px;
+    font-style: italic;
 }
 
 #Jared {
