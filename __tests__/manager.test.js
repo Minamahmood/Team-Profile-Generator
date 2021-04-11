@@ -1,12 +1,34 @@
 const Manager = require("../lib/manager");
 
-test("can set GitHub account via constructor", () => {
-    const testValue = "GitHubUser";
-    const e = new Engineer("mmm", 1, "fake@fake.com", "GitHubUser");
-    expect(e.getRole()).toBe(testValue);
+test("can set OfficeNumber  via constructor", () => {
+    const testValue = "1";
+    const e = new Manager("name", "fake@fake.com", "officeNumber");
+    expect(e.getOfficeNumber()).toBe(testValue);
 });
-test("can get GitHub username via get GitHub()", () => {
-    const testValue = "GitHubUser";
-    const e = new Engineer("mmm", 1, "fake@fake.com", testValue);
-    expect(e.getGithub()).toBe(testValue);
+test("can get officeNumber  via get officeNumber()", () => {
+    const testValue = "1";
+    const e = new Manager("name", "fake@fake.com", testValue);
+    expect(e.getOfficeNumber()).toBe(testValue);
+});
+//name
+test("can set OfficeNumber  via constructor", () => {
+    const testValue = "1";
+    const e = new Manager("name", "fake@fake.com", "officeNumber");
+    expect(e.getOfficeNumber()).toBe(testValue);
+});
+test("can get officeNumber  via get officeNumber()", () => {
+    const testValue = "1";
+    const e = new Manager("name", "fake@fake.com", testValue);
+    expect(e.getOfficeNumber()).toBe(testValue);
+});
+//email
+test("can set OfficeNumber  via constructor", () => {
+    const testValue = "1";
+    const e = new Manager("name", "fake@fake.com", "officeNumber");
+    expect(e.getOfficeNumber()).toBe(testValue);
+});
+test("can get officeNumber  via get officeNumber()", () => {
+    const testValue = "1";
+    const e = new Manager("name", "fake@fake.com", testValue);
+    expect(e.getOfficeNumber()).toBe(testValue);
 });
