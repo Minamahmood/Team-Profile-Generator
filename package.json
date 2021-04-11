@@ -1,22 +1,25 @@
 {
-  "name": "team-profile-generator",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Minamahmood/Team-Profile-Generator.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Minamahmood/Team-Profile-Generator/issues"
-  },
-  "homepage": "https://github.com/Minamahmood/Team-Profile-Generator#readme",
-  "dependencies": {
-    "inquirer": "^8.0.0"
-  }
+    "name": "team-profile-generator",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "test": "jest --verbose test/*"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Minamahmood/Team-Profile-Generator.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Minamahmood/Team-Profile-Generator/issues"
+    },
+    "homepage": "https://github.com/Minamahmood/Team-Profile-Generator#readme",
+    "dependencies": {
+        "inquirer": "^8.0.0"
+    },
+    "devDependencies": {
+        "jest": "^26.6.3"
+    }
 }
