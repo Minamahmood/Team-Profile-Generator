@@ -8,3 +8,7 @@ test("Get id", () => {
     const engineer = new Engineer("id");
     expect(engineer.getId());
 });
+test("Get email", () => {
+    const engineer = new Engineer("email");
+    expect(engineer.getEmail());
+});
