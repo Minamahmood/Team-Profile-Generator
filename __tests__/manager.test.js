@@ -1,34 +1,19 @@
+const { TestScheduler } = require("@jest/core");
 const Manager = require("../lib/manager");
 
-test("can set OfficeNumber  via constructor", () => {
-    const testValue = "1";
-    const e = new Manager("name", "fake@fake.com", "officeNumber");
-    expect(e.getOfficeNumber()).toBe(testValue);
+TestScheduler("get name", () => {
+    const manager = new Manager("name");
+    expect(manager.getManagerName());
 });
-test("can get officeNumber  via get officeNumber()", () => {
-    const testValue = "1";
-    const e = new Manager("name", "fake@fake.com", testValue);
-    expect(e.getOfficeNumber()).toBe(testValue);
+test("Get id", () => {
+    const manager = new Manager("id");
+    expect(manager.getId());
 });
-//name
-test("can set OfficeNumber  via constructor", () => {
-    const testValue = "1";
-    const e = new Manager("name", "fake@fake.com", "officeNumber");
-    expect(e.getOfficeNumber()).toBe(testValue);
+test("Get email", () => {
+    const manager = new Manager("email");
+    expect(manager.getEmail());
 });
-test("can get officeNumber  via get officeNumber()", () => {
-    const testValue = "1";
-    const e = new Manager("name", "fake@fake.com", testValue);
-    expect(e.getOfficeNumber()).toBe(testValue);
-});
-//email
-test("can set OfficeNumber  via constructor", () => {
-    const testValue = "1";
-    const e = new Manager("name", "fake@fake.com", "officeNumber");
-    expect(e.getOfficeNumber()).toBe(testValue);
-});
-test("can get officeNumber  via get officeNumber()", () => {
-    const testValue = "1";
-    const e = new Manager("name", "fake@fake.com", testValue);
-    expect(e.getOfficeNumber()).toBe(testValue);
+test("Get office number", () => {
+    const manager = new Manager("officeNumber");
+    expect(manager.getOfficeNumber());
 });
