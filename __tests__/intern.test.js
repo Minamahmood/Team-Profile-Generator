@@ -9,3 +9,11 @@ test("Get id", () => {
     const intern = new Intern("id");
     expect(intern.getInternId());
 });
+test("Get email", () => {
+    const intern = new Intern("email");
+    expect(intern.getInternEmail());
+});
+test("Get school", () => {
+    const intern = new Intern("school");
+    expect(intern.getInternSchool());
+});
