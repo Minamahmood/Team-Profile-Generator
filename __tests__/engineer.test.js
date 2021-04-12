@@ -12,3 +12,7 @@ test("Get email", () => {
     const engineer = new Engineer("email");
     expect(engineer.getEmail());
 });
+test("Get github", () => {
+    const engineer = new Engineer("github");
+    expect(engineer.getGithub());
+});
