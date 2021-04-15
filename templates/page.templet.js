@@ -1,20 +1,25 @@
 const team = (myTeam) => {
   const manager = (myManager) => {
     return `
-          <div class="card">
-          <h2 class="card-title">
+  <div class="card">
+  <div class="card employee-card">
+      <div class="card-header">
+      <h2 class="card-title">
           ${myManager.getName()}</h2>
           <h3 class="card-title"><i class="fas fa-user-tie"></i></h3>
-          <p class="card-body">
-          <ul class="list-group">
-          <li class="list-group-item">ID:  ${myManager.getId()}</li>
-          <li class="list-group-item">Email:<a href="mail:${myManager.getEmail()}"></a></li>
-          <li class="list-group-item">Office Number: ${myManager.getOfficeNumber()}</i>
-  
-          
-          </ul>
-  
+          <div class="card-title"></div>
+          <h5 class="card-title">Mina</h5>
+          <h4><i class="fas fa-glasses"></i> Engineer</h4>
+          <div class="card-body">
+              <ul class="list-group">
+                  <li class="list-group-item">ID: ${myManager.getId()}</li>
+                  <li class="list-group-item">Email: <a href="mail:${myManager.getEmail()}"></a></li>
+                  <li class="list-group-item">Office Number: ${myManager.getOfficeNumber()}</i>
+              </ul>
           </div>
-          `;
+      </div>
+  </div>
+</div>
+`;
   };
 };
