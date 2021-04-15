@@ -1,10 +1,15 @@
 const { TestScheduler } = require("@jest/core");
 const Manager = require("../lib/manager");
 test("get role", () => {
-  const engineer = new Engineer("getRole");
-  expect(engineer.getRole());
+  const manager = new Manager("getRole");
+  expect(manager.getRole());
 });
+
 test("Get office number", () => {
-  const manager = new Manager("officeNumber");
+  const manager = new Manager("getOfficeNumber");
   expect(manager.getOfficeNumber());
+});
+test("get name", () => {
+  const manager = new Manager("guy");
+  expect(manager.getName());
 });

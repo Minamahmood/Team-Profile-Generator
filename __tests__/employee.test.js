@@ -1,11 +1,12 @@
 const Employee = require("../lib/employee");
+const Manager = require("../lib/manager");
 test("dose my test work", () => {
   const yes = true;
   expect(yes).toBe(true);
 });
-TestScheduler("get name", () => {
+test("get name", () => {
   const manager = new Manager("name");
-  expect(manager.getManagerName());
+  expect(manager.getName());
 });
 test("Get id", () => {
   const manager = new Manager("id");
