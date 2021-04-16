@@ -23,7 +23,7 @@ function addToTeam() {
         }, ])
         .then((data) => {
             switch (data.addEmployee) {
-                case "ENGENEER":
+                case "Engineer":
                     engineerInfo();
                     break;
                 case "Intern":
