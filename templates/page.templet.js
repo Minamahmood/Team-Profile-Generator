@@ -55,7 +55,7 @@ const team = (myTeam) => {
           <div class="card-header">
           <h2 class="card-title">
               ${intern.getName()}</h2>
-              <h3 class="card-title"><i class="fas fa-user-tie"></i></h3>
+              <h3 class="card-title"><i class="fas fa-graduation-cap"></i></h3>
               <div class="card-title"></div>
              
               <div class="card-body">

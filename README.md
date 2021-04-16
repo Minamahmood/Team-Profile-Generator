@@ -2,6 +2,10 @@
 
 ## DESCRIPTION:The Team Profile Generator is a command line input application run in Node that requests information from the user about members of an employee team and generates an HTML file displaying that information ,the user is asked to describe the first member of thair team.
 
+<!-- test example -->
+
+![example](https://user-images.githubusercontent.com/56496370/114971352-ff133600-9e30-11eb-8f30-bc901d39e3f1.gif)
+
 ## TABLE OF CONTENTS:
 
 - [github](#GITHUB)
