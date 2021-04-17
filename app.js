@@ -5,7 +5,7 @@ const inquirer = require("inquirer");
 const path = require("path");
 const fs = require("fs");
 
-const OUTPUT_DIR = path.resolve(__dirname, "output");
+const OUTPUT_DIR = path.resolve(__dirname, "templates/output");
 const outputpath = path.join(OUTPUT_DIR, "team.html");
 const render = require("./templates/page.templet");
 const Employee = require("./lib/employee");
@@ -47,6 +47,11 @@ function managerInfo() {
             },
             {
                 type: "input",
+                name: "managerId",
+                message: "Manager Id:",
+            },
+            {
+                type: "input",
                 name: "managerEmail",
                 message: "Manager Email:",
             },
@@ -61,7 +66,7 @@ function managerInfo() {
                 data.managerName,
                 data.managerId,
                 data.managerEmail,
-                data.managerOfficeNumber
+                data.managerNumber
             );
             team.push(manager);
             addToTeam();
@@ -96,7 +101,7 @@ function engineerInfo() {
                 data.engineerName,
                 data.engineerId,
                 data.engineerEmail,
-                data.managerGithub
+                data.engineerGithub
             );
             team.push(engineer);
             addToTeam();
@@ -107,8 +112,8 @@ function internInfo() {
     inquirer
         .prompt([{
                 type: "input",
-                name: "engineerName",
-                message: "Engineer Name:",
+                name: "internName",
+                message: "Intern Name:",
             },
             {
                 type: "input",

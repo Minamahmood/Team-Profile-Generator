@@ -6,6 +6,8 @@
 
 ![example](https://user-images.githubusercontent.com/56496370/114971352-ff133600-9e30-11eb-8f30-bc901d39e3f1.gif)
 
+![example](https://user-images.githubusercontent.com/56496370/115102233-6c40cd00-9efe-11eb-8dac-b277657a2d66.gif)
+
 ## TABLE OF CONTENTS:
 
 - [github](#GITHUB)
